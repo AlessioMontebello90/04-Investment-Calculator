@@ -4,7 +4,7 @@ import UserInput from "./components/UserInput.jsx";
 import Results from "./components/Results.jsx";
 
 function App() {
-  // Correggo il nome dello stato in userInput (con la 'u' minuscola)
+  
   const [userInput, setUserInput] = useState({
     initialInvestment: 10000,
     annualInvestment: 1200,
@@ -18,7 +18,7 @@ function App() {
     setUserInput((prevUserInput) => {
       return {
         ...prevUserInput,
-        [inputIdentifier]: +newValue, // Conversione in numero
+        [inputIdentifier]: +newValue, 
       };
     });
   }

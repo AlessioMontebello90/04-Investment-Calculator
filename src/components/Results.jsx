@@ -1,7 +1,7 @@
 import { calculateInvestmentResults, formatter } from "../util/investment.js";
 
 export default function Results({ input }) {
-  const resultsData = calculateInvestmentResults(input); // Nome corretto: resultsData
+  const resultsData = calculateInvestmentResults(input); 
   const initialInvestment =
     resultsData[0].valueEndOfYear -
     resultsData[0].interest -
@@ -19,7 +19,7 @@ export default function Results({ input }) {
         </tr>
       </thead>
       <tbody>
-        {resultsData.map((yearData) => { // Utilizzo resultsData qui
+        {resultsData.map((yearData) => { 
           const totalInterest =
             yearData.valueEndOfYear -
             yearData.annualInvestment * yearData.year -
